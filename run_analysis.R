@@ -100,6 +100,6 @@ Complete_Data    = aggregate(NoActivityType[,names(NoActivityType) != c('activit
 Complete_Data    = merge(Complete_Data,activity_Type,by='activityId',all.x=TRUE);
 
 # Export the Complete_Data set 
-write.table(Complete_Data, './Complete_Data.txt',row.names=TRUE,sep='\t');
+write.table(Complete_Data, './Complete_Data.txt',row.names=FALSE);
 
 
